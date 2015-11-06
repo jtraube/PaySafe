@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.damien.paysafe1_0_a.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/paysafe_logo"
+        android:layout_gravity="center_horizontal"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp" />
+
+    <Button android:id="@+id/new_user_button"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="@string/new_user"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#b5baf6"
+        android:layout_weight="0.08"
+        android:textSize="24sp"
+        android:typeface="normal" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.85"
+        android:weightSum="1">
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/copyright"
+        android:id="@+id/textView"
+        android:password="false"
+        android:layout_gravity="center_horizontal" />
+
+
+    <!--Go to register page when pressed-->
+
+</LinearLayout>
+
+
