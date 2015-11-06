@@ -13,7 +13,12 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+
     <!-- Front page strings -->
     <string name="new_user">New User</string>
     <string name="copyright">\@PST 2015</string>
+
+    <!-- Main menu strings -->
+    <string name="main_menu">Main Menu</string>
+
 </resources>
