@@ -6,24 +6,36 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.view.View.OnClickListener;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button login_button = (Button) findViewById(R.id.login_button);
-        login_button.setOnClickListener((OnClickListener) this);
-    }
 
-    @Override
-    public void onClick(View v) {
-        Log.i("clicks", "You Clicked Login");
-        Intent i=new Intent(MainActivity.this, LoginActivity.class);
-        startActivity(i);
+        //Login Button Function
+        Button login_button = (Button) findViewById(R.id.login_button);
+        login_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i("clicks", "You Clicked Login");
+                startActivity(new Intent(MainActivity.this, LoginActivity.class));
+            }
+        });
+
+        //New User Button Function
+        Button signup_button = (Button) findViewById(R.id.signup_button);
+        signup_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View w) {
+                Log.i("clicks", "You Clicked New User");
+                startActivity(new Intent(MainActivity.this, SignUp.class));
+            }
+        });
+
     }
 
 }

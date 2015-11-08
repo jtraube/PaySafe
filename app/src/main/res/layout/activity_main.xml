@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/new_user"
-        android:id="@+id/button"
+        android:id="@+id/signup_button"
         android:textSize="24sp"
         android:backgroundTint="#b5baf6"
         android:layout_below="@+id/login_button"
